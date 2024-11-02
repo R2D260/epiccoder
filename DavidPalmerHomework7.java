@@ -1,0 +1,53 @@
+//David Palmer Chapter 7 Homwork7.1
+//Assign grades 
+
+import java.util.Scanner;
+
+public class DavidPalmerHomework7 {
+   public static void main(String[] args) {
+   
+//scanner
+   Scanner input = new Scanner(System.in);
+//Number of studnets 
+   System.out.print("Enter Number of Students: ");
+      int numberOfstudents = input.nextInt();
+   
+//new data
+   double[] scores = new double[numberOfstudents]; //scores array
+   double best = 0; //best score 
+   
+//find the best score
+   System.out.print("Enter " + numberOfstudents + " scores: ");
+   for (int i = 0; i < scores.length; i++) {
+       scores[i] = input.nextDouble();
+   if (scores[i] > best)
+        best = scores[i];
+
+   }
+   
+   char grade; 
+      
+      for (int i = 0; i < scores.length; i++) {
+         
+         if (scores[i] >= best - 10)
+            grade = 'A';
+           
+         else if (scores[i] >= best - 20)
+            grade = 'B';
+          
+         else if (scores[i] >= best - 30)
+            grade = 'C';
+            
+         else if (scores[i] >= best - 40)
+            grade = 'D';
+            
+         else
+            grade = 'F';
+            
+         System.out.println("Student " + i + " score is " + scores[i] + " and grade is " + grade);
+   
+
+               }
+            } 
+         }
+      
