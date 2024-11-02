@@ -1,0 +1,29 @@
+//David Palmer Chapter4 Homework 4.1
+//Compute the area of a pentagon 
+
+import java.util.Scanner;
+
+public class DavidPalmerHomework4 {
+   public static void main(String[] args) {
+   
+//input for scanner
+   Scanner input = new Scanner(System.in);
+   
+//promt user to enter value
+   System.out.print("Enter the length from the center to a vertex: ");
+      double radious = input.nextDouble();
+      double side = 2 * radious * Math.sin(Math.PI / 5);
+      double area = 5 * side * side /(4 * Math.tan(Math.PI / 5));
+      
+//prints out message for user and rounds to two decimals
+      System.out.println("The area of the pentagon is " + Math.round(area*100)/100.0);
+      
+      
+      }
+   }
+   
+   
+   
+   
+   
+   
