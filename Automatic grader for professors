@@ -1,9 +1,8 @@
-//David Palmer Chapter 7 Homwork7.1
 //Assign grades 
 
 import java.util.Scanner;
 
-public class DavidPalmerHomework7 {
+public class R2D2 {
    public static void main(String[] args) {
    
 //scanner
