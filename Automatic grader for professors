@@ -1,4 +1,4 @@
-//Assign grades 
+//Automactic grading assistant. Input all the grades and this will give you a list of letter grades for each student. 
 
 import java.util.Scanner;
 
